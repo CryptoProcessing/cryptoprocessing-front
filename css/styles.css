@@ -186,6 +186,10 @@ body {
   padding-left: 20px;
 }
 
+.container-fluid-sized {
+  max-width: 1200px;
+}
+
 header {
   position: fixed;
   left: 0;
@@ -407,9 +411,105 @@ header {
   padding: 54px 0 95px;
 }
 
+.what__cont {
+  padding-left: 70px;
+}
+
 .caption {
   font-family: Muller;
   font-size: 26px;
-  text-align: center;
   color: #ffffff;
+  display: inline-block;
+}
+
+.caption_underline {
+  position: relative;
+}
+
+.caption_underline:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-width: 1px;
+  background: -webkit-linear-gradient(left,rgba(255,255,255,0),#fff);
+  background: linear-gradient(to right,rgba(255,255,255,0),#fff);
+  bottom: -20px;
+  left: 20px;
+}
+
+.caption_what {
+  margin-bottom: 55px;
+}
+
+.text {
+  font-family: Muller;
+  font-size: 16px;
+  line-height: 1.63;
+  color: #ffffff;
+}
+
+.text_margin {
+  margin-bottom: 30px;
+}
+
+.circles {
+  position: relative;
+  padding-left: 10%;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .5s;
+  padding-right: 21px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.circle_big {
+  background: url('../images/bg/what-we-do-big.svg') center center no-repeat/cover;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  transform: none;
+  top: auto;
+}
+
+.circle_medium {
+  background: url('../images/bg/what-we-do-medium.png') center center no-repeat/cover;
+  width: 410px;
+  height: 410px;
+}
+
+.circle_small {
+  background: url('../images/bg/what-we-do-small.png') center center no-repeat/cover;
+  width: 216px;
+  height: 216px;
+}
+
+.circle__cont {
+  max-width: 158px;
+  display: inline-block;
+}
+
+.circle__caption {
+  font-family: Muller;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 7px;
+  display: block;
+}
+
+.circle__text {
+  font-family: Muller;
+  font-size: 13px;
+  color: #ffffff;
+  margin-bottom: 8px;
+  display: block;
 }
