@@ -186,7 +186,15 @@ body {
   padding-left: 20px;
 }
 
+header {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 .header {
+  width: 100%;
   padding: 34px 0 18px 0;
   border-bottom: 1px solid #7E94C2;
   display: flex;
@@ -200,6 +208,16 @@ body {
 
 .header__item_with_sublist {
   position: relative;
+}
+
+.header__item_with_sublist:after {
+  content: '';
+  display: inline-block;
+  background: url(../images/icons/chevron.svg) center center no-repeat/cover;
+  opacity: .5;
+  margin-left: 8px;
+  width: 12px;
+  height: 8px;
 }
 
 .header__list {
@@ -302,4 +320,96 @@ body {
   width: 226px;
   padding: 8px 0 8px 29px;
   color: #0c3483;
+}
+
+.hero {
+  padding: 355px 0 114px;
+  position: relative;
+  background-image: radial-gradient(circle at 48% -25%, #30559F, #0C3483);
+  z-index: 10;
+}
+
+.hero:before {
+  content: url('../images/bg/circles-top.svg');
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: .5;
+  z-index: -1;
+}
+
+.hero__wave {
+  position: absolute;
+  bottom: 114px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.hero__wave img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1599px) {
+  .hero__wave {
+    bottom: 0;
+  }
+}
+
+.hero__caption {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.33;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero__sub-caption {
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero__buttons {
+  margin: 70px auto 124px;
+  max-width: 528px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  width: 240px;
+  height: 58px;
+  font-size: 18px;
+  font-weight: 500;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  color: #fff;
+  line-height: 58px;
+  box-sizing: border-box;
+  display: block;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn-blue {
+  background-image: linear-gradient(to left, #0bccff, #0984ff);
+  border: none;
+}
+
+.what {
+  padding: 54px 0 95px;
+}
+
+.caption {
+  font-family: Muller;
+  font-size: 26px;
+  text-align: center;
+  color: #ffffff;
 }

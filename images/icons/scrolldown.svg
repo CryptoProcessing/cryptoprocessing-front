@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="134px" height="134px" viewBox="0 0 134 134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Scroll_down</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="116.276777%" y1="100%" x2="-59.7806731%" y2="-62.0595689%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#0081FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CryptoProcessing_Home_blue" transform="translate(-653.000000, -750.000000)">
+            <g id="Screen_1" transform="translate(-153.000000, -546.000000)">
+                <g id="Scroll_down" transform="translate(806.000000, 1296.000000)">
+                    <path d="M67,123 C97.927946,123 123,97.927946 123,67 C123,36.072054 97.927946,11 67,11 C36.072054,11 11,36.072054 11,67 C11,97.927946 36.072054,123 67,123 Z" id="Oval" fill="url(#linearGradient-1)" opacity="0.200000003"></path>
+                    <circle id="Oval" stroke="#FFFFFF" opacity="0.07" cx="67" cy="67" r="66.5"></circle>
+                    <g id="mouse" transform="translate(52.000000, 38.000000)" fill-rule="nonzero">
+                        <path d="M14.9376596,0 C6.70893617,0 0.0146808511,6.70734597 0.0146808511,14.95109 L0.0146808511,29.9247867 C0.0146808511,38.1683175 6.70893617,44.8750237 14.9376596,44.8750237 C23.166383,44.8750237 29.8606383,38.1685308 29.8606383,29.9247867 L29.8606383,14.95109 C29.8606383,6.70734597 23.1661702,0 14.9376596,0 Z" id="Shape" stroke="#FFFFFF" stroke-width="2"></path>
+                        <path d="M14.9376596,4.98604265 C14.4797872,4.98604265 14.1085106,5.35777251 14.1085106,5.8171564 L14.1085106,13.3426066 C14.1085106,13.8019905 14.4797872,14.1737204 14.9376596,14.1737204 C15.3955319,14.1737204 15.7668085,13.8019905 15.7668085,13.3426066 L15.7668085,5.8171564 C15.7665957,5.35777251 15.3955319,4.98604265 14.9376596,4.98604265 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                    <polyline id="Shape" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" transform="translate(67.000000, 109.000000) scale(1, -1) translate(-67.000000, -109.000000) " points="75 113 67 105 59 113"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

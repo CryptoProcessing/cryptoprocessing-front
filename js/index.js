@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  // header
+  // header start
 
   $('.header__item_with_sublist, .header__switcher').click(function(e) {
     e.preventDefault();
@@ -10,4 +10,7 @@ $(document).ready(function(){
 
   });
 
+  // header end
+
+  
 });
