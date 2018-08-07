@@ -1,0 +1,305 @@
+@font-face {
+  font-family: Muller;
+  src: url('../fonts/MullerRegular.woff2') format('woff2'), url('../fonts/MullerRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url('../fonts/MullerBold.woff2') format('woff2'), url('../fonts/MullerBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url('../fonts/MullerMedium.woff2') format('woff2'), url('../fonts/MullerMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url('../fonts/MullerLight.woff2') format('woff2'), url('../fonts/MullerLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: inherit;
+}
+
+body {
+  min-width: 1200px;
+  font-family: Muller;
+  background: #0c3483;
+}
+
+.row {
+  min-width: 1200px;
+}
+
+.container-fluid {
+  max-width: 1380px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.header {
+  padding: 34px 0 18px 0;
+  border-bottom: 1px solid #7E94C2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__item {
+  cursor: pointer;
+}
+
+.header__item_with_sublist {
+  position: relative;
+}
+
+.header__list {
+  width: 40.8%;
+  display: flex;
+  justify-content: space-between
+}
+
+.header__link {
+  color: #fff;
+  font-size: 16px;
+}
+
+.header__link_arrow:after {
+  content: url(../images/icons/arrow.svg);
+  margin-left: 8px;
+}
+
+.header__link:hover {
+  color: #fff;
+  opacity: .8;
+}
+
+.header__link:active,
+.header__link:focus {
+  color: #fff;
+  opacity: .8;
+}
+
+.header__switcher {
+  cursor: pointer;
+}
+
+.switcher {
+  position: relative;
+}
+
+.switcher__text {
+  opacity: 0.23;
+  font-family: Muller;
+  font-size: 16px;
+  color: #ffffff;
+  padding-bottom: 3px;
+  border-bottom: 1px dashed #fff;
+}
+
+.window {
+  padding: 8px;
+  background: #fff;
+  box-shadow: 0 10px 16px 0 rgba(0, 41, 99, 0.24);
+  border-radius: 5px;
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.window_sublist {
+  padding: 29px 12px;
+}
+
+.window:after {
+  content: '';
+  background: #fff;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -7.5px;
+  margin-left: -7.5px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.window__btn {
+  display: block;
+  font-size: 16px;
+  padding: 4px 0 4px 8px;
+  color: #000f25;
+  cursor: pointer;
+  min-width: 50px;
+  box-sizing: border-box;
+}
+
+.window__btn:hover {
+  background-color: #EFF2F7;
+}
+
+.window__btn_disabled {
+  opacity: 0.2;
+}
+
+.window__btn_disabled:hover {
+  background-color: transparent;
+}
+
+.window_sublist .window__btn {
+  width: 226px;
+  padding: 8px 0 8px 29px;
+  color: #0c3483;
+}
