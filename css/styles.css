@@ -329,8 +329,18 @@ header {
 .hero {
   padding: 355px 0 114px;
   position: relative;
-  background-image: radial-gradient(circle at 48% -25%, #30559F, #0C3483);
   z-index: 10;
+}
+
+.hero:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  background-image: radial-gradient(circle closest-corner at 50% 0, #30559F, #0C3483);
 }
 
 .hero:before {
