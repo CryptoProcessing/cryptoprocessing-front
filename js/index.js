@@ -17,5 +17,26 @@ $(document).ready(function() {
 
   // header end
 
+  // team start
+
+  $('.team__slider').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    draggable: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000
+  });
+
+  $('.team__arrow_left').click(function() {
+    $('.team__slider').slick('slickPrev');
+  });
+
+  $('.team__arrow_right').click(function() {
+    $('.team__slider').slick('slickNext');
+  });
+
+  // team end
 
 });
