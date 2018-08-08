@@ -1,6 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" viewBox="0 0 24 21">
-    <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-width="1.5" opacity=".5" transform="translate(1 1)">
-        <path d="M20.136 9.135V5.899a2.61 2.61 0 0 0-2.61-2.61H0v13.1A2.61 2.61 0 0 0 2.61 19h14.915a2.61 2.61 0 0 0 2.61-2.61v-2.87M0 3.106V1.644C0 .736.751 0 1.678 0h14.17c.926 0 1.677.736 1.677 1.644v1.28"/>
-        <rect width="7.085" height="4.385" x="14.915" y="9.135" rx=".746"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../../css/styles.css"?>
+<svg width="22px" height="19px" viewBox="0 0 24 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="wallet_1" transform="translate(1.000000, 1.000000)" stroke-width="1.5">
+            <path d="M0,9.13461538 L-4.4408921e-16,5.89863103 C-6.20629003e-16,4.45707423 1.16861269,3.28846154 2.61016949,3.28846154 L20.1355932,3.28846154 L20.1355932,16.3898305 C20.1355932,17.8313873 18.9669805,19 17.5254237,19 L2.61016949,19 C1.16861269,19 1.45689944e-15,17.8313873 0,16.3898305 L0,13.5192308" id="Rectangle-7" transform="translate(10.067797, 11.144231) scale(-1, 1) translate(-10.067797, -11.144231) "></path>
+            <path d="M0,3.10576923 L0,1.64423077 C0,0.73614719 0.751251013,0 1.6779661,0 L15.8474576,0 C16.7741727,0 17.5254237,0.73614719 17.5254237,1.64423077 L17.5254237,2.92307692" id="Rectangle-8"></path>
+            <rect id="Rectangle-9" x="14.9152542" y="9.13461538" width="7.08474576" height="4.38461538" rx="0.745762712"></rect>
+        </g>
     </g>
 </svg>
