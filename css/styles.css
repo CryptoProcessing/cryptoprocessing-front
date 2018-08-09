@@ -611,6 +611,9 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .circle:hover {
@@ -618,7 +621,7 @@ header {
 }
 
 .circle_big {
-  background: url('../images/bg/what-we-do-big.svg') center center no-repeat/cover;
+  background-image: url('../images/bg/what-we-do-big.svg');
   position: relative;
   width: 600px;
   height: 600px;
@@ -627,13 +630,13 @@ header {
 }
 
 .circle_medium {
-  background: url('../images/bg/what-we-do-medium.png') center center no-repeat/cover;
+  background-image: url('../images/bg/what-we-do-medium.png');
   width: 410px;
   height: 410px;
 }
 
 .circle_small {
-  background: url('../images/bg/what-we-do-small.png') center center no-repeat/cover;
+  background-image: url('../images/bg/what-we-do-small.png');
   width: 216px;
   height: 216px;
 }
@@ -734,6 +737,11 @@ header {
   left: 0;
   top: 0;
   z-index: -1;
+  max-width: 100%;
+}
+
+.solutions__bg img {
+  max-width: 100%;
 }
 
 .solution {
