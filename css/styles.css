@@ -1162,6 +1162,8 @@ header {
 
 .footer {
   padding: 0 0 47px;
+  position: relative;
+  z-index: 2;
 }
 
 .footer__line {
@@ -1245,11 +1247,16 @@ header {
 
 /* contact page */
 
+.main_contact {
+  background: #fff;
+  z-index: 1;
+  position: relative;
+}
+
 .contact {
   padding: 209px 0 0 0;
-  background: #fff;
   position: relative;
-  z-index: 10;
+  z-index: 11;
 }
 
 .contact:after{
@@ -1361,6 +1368,8 @@ header {
 .info {
   padding: 169px 0 97px;
   position: relative;
+  z-index: 10;
+  background: #0c3483;
 }
 
 .info:before {
