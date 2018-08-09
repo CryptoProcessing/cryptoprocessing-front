@@ -242,12 +242,13 @@ header {
 .header__list {
   width: 40.8%;
   display: flex;
-  justify-content: space-between
+  justify-content: flex-end;
 }
 
 .header__link {
   color: #fff;
   font-size: 16px;
+  margin-left: 40px;
 }
 
 .header__link_arrow:after,
@@ -348,6 +349,10 @@ header {
   z-index: 10;
 }
 
+.hero_api {
+  padding: 207px 0 97px;
+}
+
 .hero:after {
   content: '';
   position: absolute;
@@ -357,6 +362,10 @@ header {
   bottom: 0;
   z-index: -2;
   background-image: radial-gradient(circle closest-corner at 50% 0, #30559F, #0C3483);
+}
+
+.hero_api:after {
+  background-image: radial-gradient(circle closest-corner at 50% -50%, #30559F, #0C3483);
 }
 
 .hero:before {
@@ -387,12 +396,31 @@ header {
   }
 }
 
+.hero__cont {
+  margin-left: -33px;
+}
+
+@media screen and (max-width: 1360px) {
+  .hero__cont {
+    margin-left: 0;
+  }
+}
+
 .hero__caption {
   font-size: 40px;
   font-weight: 500;
   line-height: 1.33;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 13px;
+}
+
+.hero__caption_small {
+  font-size: 36px;
+  line-height: 1.47;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 15px;
 }
 
 .hero__sub-caption {
@@ -401,12 +429,26 @@ header {
   color: #ffffff;
 }
 
+.hero__sub-caption_left {
+  line-height: 1.45;
+  text-align: left;
+}
+
 .hero__buttons {
   margin: 70px auto 124px;
   max-width: 528px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.hero__buttons_api {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.hero__buttons_one-button {
+  justify-content: center;
 }
 
 .hero__bg {
@@ -475,11 +517,19 @@ header {
   margin-left: 63px;
 }
 
+.btn_absolute_centered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
 .btn_contacts {
   height: 38px;
   line-height: 38px;
   font-size: 14px;
-  margin-bottom: 42px;
+  max-width: 200px;
+  /* margin-bottom: 42px; */
 }
 
 .what {
@@ -590,6 +640,11 @@ header {
   margin-bottom: 86px;
 }
 
+.text_how {
+  margin: 29px auto 110px;
+  max-width: 698px;
+}
+
 .text_center {
   display: block;
   text-align: center;
@@ -694,7 +749,7 @@ header {
 .level__line {
   width: 100%;
   height: 6px;
-  background-image: linear-gradient(to right, #68e0cf, #209cff);
+  background-image: linear-gradient(to right, #00A7FF, #53D0ED, #22468D);
   position: relative;
 }
 
@@ -723,6 +778,23 @@ header {
   padding-top: 82px;
   padding-bottom: 150px;
   position: relative;
+}
+
+.solutions_api .caption_solutions {
+  margin-bottom: 27px;
+}
+
+.solutions_api .caption_solutions:nth-child(3) {
+  margin-bottom: 94px;
+}
+
+.solutions__subcaption {
+  opacity: 0.5;
+  font-size: 19px;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 23px;
 }
 
 .solutions__image {
@@ -880,6 +952,10 @@ header {
   font-weight: bold;
 }
 
+.code__btn_disabled {
+  opacity: .6;
+}
+
 .code__btn_selected:after,
 .code__tab:after {
   content: '';
@@ -917,6 +993,11 @@ header {
   box-shadow: 0 10px 16px 0 rgba(0, 41, 99, 0.14);
   position: relative;
   z-index: 10;
+  display: none;
+}
+
+.panel:nth-child(2) {
+  display: block;
 }
 
 .panel:after {
@@ -1160,6 +1241,10 @@ header {
   z-index: -1;
 }
 
+.talk__bg_api {
+  top: 35%;
+}
+
 .talk__particles {
   position: absolute;
   top: -60px;
@@ -1182,8 +1267,10 @@ header {
 }
 
 .footer__icons {
-  text-align: right;
   font-size: 0;
+  display: flex;
+  justify-content: flex-end;
+
 }
 
 .footer__social {
@@ -1213,9 +1300,18 @@ header {
   opacity: .5;
 }
 
+.footer__info-item a {
+  font-size: 14px;
+  color: #ffffff;
+  transition: .3s;
+}
+
 .footer__link:hover,
 .footer__link:active,
 .footer__link:focus,
+.footer__info-item a:hover,
+.footer__info-item a:active,
+.footer__info-item a:focus,
 .footer__terms a.footer__info-item:hover,
 .footer__terms a.footer__info-item:active,
 .footer__terms a.footer__info-item:focus {
@@ -1430,4 +1526,61 @@ header {
   color: #ffffff;
   display: block;
   margin-bottom: 31px;
+}
+
+.how {
+  padding: 98px 0 81px;
+  position: relative;
+}
+
+.how__scheme {
+  width: 100%;
+}
+
+.how__bg {
+  position: absolute;
+  right: 0;
+  top: 210px;
+  z-index: -1;
+}
+
+.simple {
+  padding: 186px 0 251px;
+  position: relative;
+}
+
+.simple__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.simple__bg_particles {
+  left: auto;
+  top: auto;
+  right: 0;
+  bottom: 87px;
+}
+
+.simple__cont {
+  position: relative;
+  border-radius: 18px;
+}
+
+.simple__cont img {
+  width: 100%;
+  transition: .4s;
+}
+
+.simple__cont .btn {
+  opacity: 0;
+}
+
+.simple__cont:hover .btn{
+  opacity: 1;
+}
+
+.simple__cont:hover img {
+  filter: blur(5px);
 }

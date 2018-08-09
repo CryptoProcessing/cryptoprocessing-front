@@ -29,7 +29,26 @@ $(document).ready(function() {
     }
   });
 
+  $("body").on('click', '[href*="#"]', function(e){
+		$('html,body').stop().animate({ scrollTop: $(this.hash).offset().top }, 1000);
+		e.preventDefault();
+	});
+
   // header end
+
+  // codetab start
+
+  $('.code__tab').click(function() {
+    var data = $(this).attr('data');
+
+    console.log(data);
+    $('.code__tab').removeClass('code__tab_selected');
+    $(this).addClass('code__tab_selected');
+    $('.panel').hide();
+    $('.panel[data="' + data +'"]').show();
+  });
+  
+  // codetab end
 
   // team start
 
