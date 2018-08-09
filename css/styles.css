@@ -1252,8 +1252,7 @@ header {
   z-index: 10;
 }
 
-.contact:after,
-.contact:before {
+.contact:after{
   content: '';
   display: block;
   position: absolute;
@@ -1265,11 +1264,6 @@ header {
 .contact:after {
   content: url('../images/bg/particles-contact.svg');
   bottom: 167px;
-}
-
-.contact:before {
-  content: url('../images/bg/circles-contact.svg');
-  bottom: -511px;
 }
 
 .form {
@@ -1366,6 +1360,17 @@ header {
 
 .info {
   padding: 169px 0 97px;
+  position: relative;
+}
+
+.info:before {
+  content: url('../images/bg/circles-contact.svg');
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  top: -511px;
 }
 
 .info__cont {
