@@ -1273,7 +1273,7 @@ header {
   bottom: 167px;
 }
 
-.form {
+.form-cont {
   padding: 40px 42px;
   margin: 79px 40px -83px;
   border-radius: 6px;
@@ -1288,7 +1288,7 @@ header {
   margin-bottom: 20px;
 }
 
-.form__line_top {
+.form__line_bot {
   align-items: baseline;
   margin-bottom: 30px;
 }
@@ -1306,6 +1306,31 @@ header {
   background-color: #f3f5f8;
   padding: 0 0 0 16px;
   transition: .3s;
+}
+
+.form__line_error {
+  position: relative;
+}
+
+.form__line_error .form__field {
+  border: solid 1px #ff2d14;
+}
+
+.form__line_error:after {
+  content: '!';
+  position: absolute;
+  right: 17px;
+  top: 14px;
+  background: #ff2d14;
+  border-radius: 50%;
+  color: #fff;
+  width: 21px;
+  height: 21px;
+  line-height: 24px;
+}
+
+.form__line_selected .text {
+  color: #007ce1;
 }
 
 .form__area {

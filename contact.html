@@ -66,28 +66,28 @@
         <div class="container-fluid container-fluid-sized">
           <div class="row center-xs">
             <div class="col-xs-8">
-              <div class="form">
-                <form action="">
+              <div class="form-cont">
+                <form action="" class="form">
                   <div class="form__line">
                     <span class="text text_black text_wide">Your first name</span>
-                    <input type="text" class="form__field" placeholder="John">
+                    <input type="text" name="name" class="form__field" placeholder="John" required>
                   </div>
                   <div class="form__line">
                     <span class="text text_black text_wide">Your last name</span>
-                    <input type="text" class="form__field" placeholder="Doe">
+                    <input type="text" name="lastName" class="form__field" placeholder="Doe" required>
                   </div>
                   <div class="form__line">
                     <span class="text text_black text_wide">Your work email</span>
-                    <input type="text" class="form__field" placeholder="Doe@gmail.com">
+                    <input type="email" name="email" class="form__field" placeholder="Doe@gmail.com" required>
                   </div>
                   <div class="form__line">
                     <span class="text text_black text_wide">Company website</span>
-                    <input type="text" class="form__field" placeholder="wowhead.com">
+                    <input type="url" name="url" class="form__field" placeholder="wowhead.com">
                   </div>
                   <div class="form__line">
                     <span class="text text_black text_wide">Country</span>
                     <div class="form__select-cont">
-                      <select class="form__select" required>
+                      <select class="form__select" name="country" required>
                         <option value="RUS">Russian Federation</option>
                         <option value="AFG">Afghanistan</option>
                         <option value="ALA">Åland Islands</option>
@@ -343,7 +343,7 @@
                   <div class="form__line">
                     <span class="text text_black text_wide">Payments volume</span>
                     <div class="form__select-cont">
-                      <select class="form__select" required>
+                      <select class="form__select" name="payment" required>
                         <option value="" selected disabled>Select a monthly amount</option>
                         <option value="none">None; just getting started</option>
                         <option value="50000">$50,000 or less</option>
@@ -354,12 +354,12 @@
                       </select>
                     </div>
                   </div>
-                  <div class="form__line form__line_top">
+                  <div class="form__line form__line_bot">
                     <span class="text text_black text_wide">Anything else?</span>
                     <textarea class="form__area" placeholder="Tell us something"></textarea>
                   </div>
                   <div class="form__btn-cont">
-                    <div class="btn btn_blue">Contact sales</div>
+                    <button class="btn btn_blue btn_contact">Contact sales</button>
                   </div>
                 </form>
               </div>
