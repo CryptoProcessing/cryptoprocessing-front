@@ -1207,6 +1207,7 @@ header {
 .footer__social img {
   display: inline-block;
   vertical-align: middle;
+  max-width: 100%;
 }
 
 .card__link:hover,
