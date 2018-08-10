@@ -191,7 +191,7 @@ body {
 }
 
 header {
-  position: fixed;
+  position: absolute;
   left: 0;
   width: 100%;
   z-index: 1000;
@@ -199,6 +199,7 @@ header {
 }
 
 .header_fixed {
+  position: fixed;
   background: #0d3483;
   opacity: .9;
   box-shadow: 0 -37px 26px 29px #000;
