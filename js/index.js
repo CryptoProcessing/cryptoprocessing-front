@@ -1,6 +1,8 @@
 $(document).ready(function() {
   // header start
 
+  var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
   $('.header__item_with_sublist, .header__switcher').click(function(e) {
     e.preventDefault();
     var list = $(this).find('.window');
@@ -8,13 +10,15 @@ $(document).ready(function() {
     list.is(':visible') ? list.fadeOut() : list.fadeIn();
   });
 
-  $(window).scrollTop() > 0 ? $('header').addClass('header_fixed') : false;
+  $(window).scrollTop() > 0 && !isIOS ? $('header').addClass('header_fixed') : false;
 
   $(window).scroll(function() {
-    var top = $(this).scrollTop();
+    if(!isIOS) {
+      var top = $(this).scrollTop();
 
-    top > 0 ? $('header').addClass('header_fixed') : false;
-    top === 0 ? $('header').removeClass('header_fixed') : false;
+      top > 0 ? $('header').addClass('header_fixed') : false;
+      top === 0 ? $('header').removeClass('header_fixed') : false;
+    }
   });
 
   $(document).click(function(e) {
