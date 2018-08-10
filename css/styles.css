@@ -1646,6 +1646,7 @@ header {
 
 .features__text-cont_no-margin {
   margin-bottom: 16px;
+  height: auto;
 }
 
 .features__text-cont_no-margin .text {
